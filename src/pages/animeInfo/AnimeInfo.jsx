@@ -161,7 +161,7 @@ function AnimeInfo({ random = false }) {
           alt={`${title} Poster`}
           className="absolute inset-0 object-cover w-full h-full filter grayscale blur-lg z-[-900]"
         />
-        <div className="flex items-start z-10 px-14 py-[70px] bg-[#242328] bg-opacity-70 gap-x-8 max-[1024px]:px-6 max-[1024px]:py-10 max-[1024px]:gap-x-4 max-[575px]:flex-col max-[575px]:items-center max-[575px]:justify-center">
+        <div className="flex items-start z-10 px-14 py-[70px] bg-[#2B2C30] bg-opacity-70 gap-x-8 max-[1024px]:px-6 max-[1024px]:py-10 max-[1024px]:gap-x-4 max-[575px]:flex-col max-[575px]:items-center max-[575px]:justify-center">
           <div className="relative w-[180px] h-[270px] max-[575px]:w-[140px] max-[575px]:h-[200px] flex-shrink-0">
             <img
               src={poster}
