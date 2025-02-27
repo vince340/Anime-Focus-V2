@@ -362,7 +362,7 @@ function AnimeInfo({ random = false }) {
                     <img
                       src={season.season_poster}
                       alt=""
-                      className="w-full h-full object-cover blur-[3px] opacity-50"
+                      className="w-full h-full object-cover blur-[3px] opacity-70"
                     />
                   </Link>
                 ))}
