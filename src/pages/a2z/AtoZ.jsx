@@ -83,7 +83,7 @@ function AtoZ({ path }) {
               <Link
                 to={`/az-list/${linkPath}`}
                 key={index}
-                className={`text-md bg-[#373646] py-1 px-4 rounded-md font-bold hover:text-black hover:bg-[#FFDD95] hover:cursor-pointer transition-all ease-out ${
+                className={`text-md bg-[#3A393E] py-1 px-4 rounded-md font-bold hover:text-black hover:bg-[#FFDD95] hover:cursor-pointer transition-all ease-out ${
                   isActive ? "text-black bg-[#FFDD95]" : ""
                 }`}
               >
