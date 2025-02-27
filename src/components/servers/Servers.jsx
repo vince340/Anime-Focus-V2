@@ -18,7 +18,7 @@ function Servers({
   const dubServers = servers?.filter((server) => server.type === "dub") || [];
   const rawServers = servers?.filter((server) => server.type === "raw") || [];
   return (
-    <div className="relative bg-[#11101A] p-4 w-full min-h-[100px] flex justify-center items-center max-[1200px]:bg-[#14151A]">
+    <div className="relative bg-[#242328] p-4 w-full min-h-[100px] flex justify-center items-center max-[1200px]:bg-[#242328]">
       {serverLoading ? (
         <div className="w-full h-full rounded-lg flex justify-center items-center max-[600px]:rounded-none">
           <BouncingLoader />
