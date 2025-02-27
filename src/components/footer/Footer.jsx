@@ -10,7 +10,7 @@ function Footer() {
         className="w-full text-left max-[500px]:hidden"
       >
         <img
-          src="https://i.postimg.cc/59ZQFHDP/20250223-164039.png"
+          src="https://i.postimg.cc/mgJbdPYD/20250227-181545.png"
           alt={logoTitle}
           className="w-[200px] h-[100px]"
         />
