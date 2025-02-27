@@ -32,7 +32,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             isOpen ? "backdrop-blur-lg" : "backdrop-blur-none"
           }`}
           onClick={onClose}
-          style={{ zIndex: 1000000, background: "rgba(32, 31, 49, .8)" }}
+          style={{ zIndex: 1000000, background: "rgba(36, 35, 40, .8)" }}
         />
       )}
 
