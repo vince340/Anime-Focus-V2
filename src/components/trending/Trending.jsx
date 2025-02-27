@@ -62,10 +62,10 @@ const Trending = ({ trending }) => {
             ))}
         </Swiper>
         <div className="absolute top-0 right-0 bottom-0 w-[45px] flex flex-col space-y-2 max-[759px]:hidden">
-          <div className="btn-next bg-[#383747] h-[50%] flex justify-center items-center rounded-[8px] cursor-pointer transition-all duration-300 ease-out hover:bg-[#FFDD95] hover:text-[#383747]">
+          <div className="btn-next bg-[#3A393E] h-[50%] flex justify-center items-center rounded-[8px] cursor-pointer transition-all duration-300 ease-out hover:bg-[#FFDD95] hover:text-[#3A393E]">
             <FaChevronRight />
           </div>
-          <div className="btn-prev bg-[#383747] h-[50%] flex justify-center items-center rounded-[8px] cursor-pointer transition-all duration-300 ease-out hover:bg-[#FFDD95] hover:text-[#383747]">
+          <div className="btn-prev bg-[#3A393E] h-[50%] flex justify-center items-center rounded-[8px] cursor-pointer transition-all duration-300 ease-out hover:bg-[#FFDD95] hover:text-[#3A393E]">
             <FaChevronLeft />
           </div>
         </div>
