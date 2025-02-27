@@ -138,14 +138,14 @@ function Episodelist({
 
   return (
     <div className="relative flex flex-col w-full h-full max-[1200px]:max-h-[500px]">
-      <div className="sticky top-0 z-10 flex flex-col gap-y-[5px] justify-start px-3 py-4 bg-[#0D0D15]">
+      <div className="sticky top-0 z-10 flex flex-col gap-y-[5px] justify-start px-3 py-4 bg-[#141415]">
         <h1 className="text-[13px] font-bold">List of episodes:</h1>
         {totalEpisodes > 100 && (
           <div className="w-full flex gap-x-4 items-center max-[1200px]:justify-between">
             <div className="min-w-fit flex text-[13px]">
               <div
                 onClick={() => setShowDropDown((prev) => !prev)}
-                className="text-white w-fit mt-1 text-[13px] relative cursor-pointer bg-[#0D0D15] flex justify-center items-center"
+                className="text-white w-fit mt-1 text-[13px] relative cursor-pointer bg-[#141415] flex justify-center items-center"
                 ref={dropDownRef}
               >
                 <FontAwesomeIcon icon={faList} />
