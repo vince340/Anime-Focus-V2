@@ -154,7 +154,7 @@ const Schedule = () => {
                     className={`h-[70px] flex flex-col justify-center items-center w-full text-center rounded-xl shadow-lg cursor-pointer ${
                       currentActiveIndex === index
                         ? "bg-[#FFDD95] text-black"
-                        : "bg-white bg-opacity-5 text-[#ffffff] hover:bg-[#373646] transition-all duration-300 ease-in-out"
+                        : "bg-white bg-opacity-5 text-[#ffffff] hover:bg-[#3A393E] transition-all duration-300 ease-in-out"
                     }`}
                   >
                     <div className="text-[18px] font-bold max-[400px]:text-[14px] max-[350px]:text-[12px]">
