@@ -44,7 +44,7 @@ function Topten({ data, className }) {
     <div className={`flex flex-col space-y-6 ${className}`}>
       <div className="flex justify-between items-center max-[350px]:flex-col max-[350px]:gap-y-2 max-[350px]:items-start">
         <h1 className="font-bold text-2xl text-[#FFDD95]">Top 10</h1>
-        <ul className="flex justify-between w-fit bg-[#373646] rounded-[4px] text-sm font-bold">
+        <ul className="flex justify-between w-fit bg-[#3A393E] rounded-[4px] text-sm font-bold">
           <li
             className={`cursor-pointer p-2 px-3 ${
               activePeriod === "today"
