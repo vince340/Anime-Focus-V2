@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <div className="px-4 w-full">
             <button
               onClick={onClose}
-              className="w-full text-white flex items-baseline h-fit gap-x-1 z-[100] px-3 py-2 bg-[#4f4d6e] rounded-3xl"
+              className="w-full text-white flex items-baseline h-fit gap-x-1 z-[100] px-3 py-2 bg-[#57565B] rounded-3xl"
             >
               <FaChevronLeft className="text-sm font-bold" />
               <p>Close menu</p>
