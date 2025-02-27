@@ -60,7 +60,7 @@ function Servers({
                       className={`px-6 py-[5px] rounded-lg cursor-pointer ${
                         activeServerId === item?.data_id
                           ? "bg-[#FFDD95] text-black"
-                          : "bg-[#373646] text-white"
+                          : "bg-[#3A393E] text-white"
                       } max-[700px]:px-3`}
                       onClick={() => setActiveServerId(item?.data_id)}
                     >
@@ -92,7 +92,7 @@ function Servers({
                       className={`px-6 py-[5px] rounded-lg cursor-pointer ${
                         activeServerId === item?.data_id
                           ? "bg-[#FFDD95] text-black"
-                          : "bg-[#373646] text-white"
+                          : "bg-[#3A393E] text-white"
                       } max-[700px]:px-3`}
                       onClick={() => setActiveServerId(item?.data_id)}
                     >
@@ -124,7 +124,7 @@ function Servers({
                       className={`px-6 py-[5px] rounded-lg cursor-pointer ${
                         activeServerId === item?.data_id
                           ? "bg-[#FFDD95] text-black"
-                          : "bg-[#373646] text-white"
+                          : "bg-[#3A393E] text-white"
                       } max-[700px]:px-3`}
                       onClick={() => setActiveServerId(item?.data_id)}
                     >
