@@ -273,7 +273,7 @@ function AnimeInfo({ random = false }) {
             </div>
           </div>
         </div>
-        <div className="bg-[#4c2B2C30] flex items-center px-8 max-[1200px]:py-10 max-[1200px]:bg-[#363544e0] max-[575px]:p-4">
+        <div className="bg-[#2B2C30] flex items-center px-8 max-[1200px]:py-10 max-[1200px]:bg-[#363544e0] max-[575px]:p-4">
           <div className="w-full flex flex-col h-fit gap-y-3">
             {info?.Overview && (
               <div className="custom-xl:hidden max-h-[150px] overflow-hidden">
@@ -362,7 +362,7 @@ function AnimeInfo({ random = false }) {
                     <img
                       src={season.season_poster}
                       alt=""
-                      className="w-full h-full object-cover blur-[5px] opacity-40"
+                      className="w-full h-full object-cover blur-[3px] opacity-50"
                     />
                   </Link>
                 ))}
