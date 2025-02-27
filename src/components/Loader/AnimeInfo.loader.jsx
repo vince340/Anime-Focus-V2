@@ -35,7 +35,7 @@ function AnimeInfoLoader() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#4c4b57c3] flex items-center px-8 max-[1200px]:py-10 max-[1200px]:bg-[#363544e0] max-[575px]:p-4">
+                <div className="bg-[#57565B] flex items-center px-8 max-[1200px]:py-10 max-[1200px]:bg-[#363544e0] max-[575px]:p-4">
                     <div className="w-full flex flex-col h-fit gap-y-4">
                         <SkeletonItems count={6} className="w-full h-[15px] rounded-xl" />
                         <div className="flex gap-x-4 py-2 mt-4">
