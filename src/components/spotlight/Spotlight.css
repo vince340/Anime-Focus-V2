@@ -16,7 +16,7 @@
   width: 40px;
   height: 40px;
   color: white;
-  background-color: #3A393E;
+  background-color: #242328;
   border-radius: 7px;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
 .button-prev:hover,
 .button-next:hover {
   background-color: #FFDD95;
-  color: #3A393E;
+  color: #57565B;
 }
 
 .button-prev::after {
