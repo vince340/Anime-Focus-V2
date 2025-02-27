@@ -222,7 +222,7 @@ export default function Watch() {
             </ul>
           )}
           <div className="flex w-full min-h-fit max-[1200px]:flex-col-reverse">
-            <div className="episodes w-[35%] bg-[#191826] flex justify-center items-center max-[1400px]:w-[380px] max-[1200px]:w-full max-[1200px]:h-full max-[1200px]:min-h-[100px]">
+            <div className="episodes w-[35%] bg-[#201F23] flex justify-center items-center max-[1400px]:w-[380px] max-[1200px]:w-full max-[1200px]:h-full max-[1200px]:min-h-[100px]">
               {!episodes ? (
                 <BouncingLoader />
               ) : (
@@ -475,7 +475,7 @@ export default function Watch() {
           </div>
         </div>
       </div>
-      <div className="w-full flex gap-x-4 items-center bg-[#191826] p-5 max-[575px]:px-3 max-[320px]:hidden">
+      <div className="w-full flex gap-x-4 items-center bg-[#201F23] p-5 max-[575px]:px-3 max-[320px]:hidden">
         <img
           src="https://i.postimg.cc/d34WWyNQ/share-icon.gif"
           alt="Share Anime"
