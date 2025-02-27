@@ -266,10 +266,10 @@ function Episodelist({
                     ref={isActive ? activeEpisodeRef : null}
                     className={`w-full pl-5 pr-2 py-3 flex items-center justify-start gap-x-8 cursor-pointer ${
                       (index + 1) % 2 && !isActive
-                        ? "bg-[#201F2D] text-gray-400"
+                        ? "bg-[#19191C] text-gray-400"
                         : "bg-none"
-                    } group md:hover:bg-[#2B2A42] ${
-                      isActive ? "text-[#FFDD95] bg-[#2B2A42]" : ""
+                    } group md:hover:bg-[#434345] ${
+                      isActive ? "text-[#FFDD95] bg-[#434345]" : ""
                     } ${isSearched ? "glow-animation" : ""}`}
                     onClick={() => {
                       if (episodeNumber) {
