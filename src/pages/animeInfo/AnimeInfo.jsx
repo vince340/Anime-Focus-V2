@@ -273,7 +273,7 @@ function AnimeInfo({ random = false }) {
             </div>
           </div>
         </div>
-       <div className="bg-[#57565B] flex items-center px-8 max-[1200px]:py-10 max-[1200px]:bg-[#00454449] max-[575px]:p-4">
+       <div className="bg-[#57565B] flex items-center px-8 max-[1200px]:py-10 max-[1200px]:bg-[#0057565B] max-[575px]:p-4">
           <div className="w-full flex flex-col h-fit gap-y-3">
             {info?.Overview && (
               <div className="custom-xl:hidden max-h-[150px] overflow-hidden">
