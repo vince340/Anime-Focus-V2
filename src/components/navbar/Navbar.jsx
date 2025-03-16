@@ -60,7 +60,7 @@ function Navbar() {
               onClick={handleHamburgerClick}
             />
               <img
-          src="https://i.postimg.cc/DzSS0VgW/20250227-181745.png"
+          src="https://i.postimg.cc/26Tn7j2g/Anime-Focus.png"
           alt={logoTitle}
           className="w-[160px] h-[39px]"
         />
