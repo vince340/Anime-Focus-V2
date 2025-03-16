@@ -1,6 +1,7 @@
 import logoTitle from "@/src/config/logoTitle.js";
 import website_name from "@/src/config/website.js";
 import { Link } from "react-router-dom";
+import SocialLinks from "../social/SocialLinks";
 
 function Footer() {
   return (
@@ -50,9 +51,12 @@ function Footer() {
             hosts and providers. {website_name} is not responsible for any media
             files shown by the video providers.
           </p>
-          <p className="text-[#9B9BA3] max-md:text-[14px]">
-            © {website_name}. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center gap-4">
+            <SocialLinks />
+            <p className="text-[#9B9BA3] max-md:text-[14px]">
+              © {website_name}. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
