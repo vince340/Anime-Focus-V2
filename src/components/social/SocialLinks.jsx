@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaDiscord, FaWhatsapp } from 'react-icons/fa';
 const socialLinks = [
   {
     icon: FaFacebook,
-    href: "https://facebook.com/your-profile", // Replace with your Facebook profile URL
+    href: "https://web.facebook.com/AnimeFocuse", // Replace with your Facebook profile URL
     color: "#1877F2",
     label: "Facebook"
   },
