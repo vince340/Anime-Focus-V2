@@ -9,7 +9,7 @@ const socialLinks = [
   },
   {
     icon: FaInstagram,
-    href: "https://instagram.com/your-profile", // Replace with your Instagram profile URL
+    href: "https://www.instagram.com/animeofficialnew", // Replace with your Instagram profile URL
     color: "#E4405F",
     label: "Instagram"
   },
