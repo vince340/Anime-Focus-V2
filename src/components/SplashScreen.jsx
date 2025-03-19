@@ -7,14 +7,10 @@ export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(false);
-      navigate('/home');
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, [navigate]);
+  const handleContinue = () => {
+    setIsVisible(false);
+    navigate('/home');
+  };
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -47,6 +43,7 @@ export default function SplashScreen() {
         </div>
         <div className="splash-buttons">
           <button onClick={() => navigate('/watch')}>Watch Anime</button>
+          <button onClick={handleContinue} className="continue-btn">Continue to Site</button>
           <button className="login-btn" onClick={() => navigate('/login')}>Login</button>
         </div>
       </div>
