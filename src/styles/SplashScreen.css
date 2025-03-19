@@ -1,0 +1,62 @@
+
+.splash-screen {
+  height: 100vh;
+  background-color: #1e1e29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.splash-screen.fade-out {
+  opacity: 0;
+}
+
+.splash-content {
+  text-align: center;
+  color: white;
+}
+
+.splash-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-pink);
+}
+
+.splash-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.splash-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.splash-buttons button {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.splash-buttons button:first-child {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+.splash-buttons .login-btn {
+  background-color: transparent;
+  border: 2px solid var(--primary-pink);
+  color: var(--primary-pink);
+}
+
+.splash-buttons button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
