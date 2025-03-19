@@ -97,6 +97,13 @@
   border: none;
 }
 
+.splash-buttons .continue-btn {
+  background: var(--primary-pink);
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
 .splash-buttons .login-btn {
   background: transparent;
   border: 2px solid var(--primary-pink);
