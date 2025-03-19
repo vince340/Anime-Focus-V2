@@ -1,12 +1,12 @@
-
 .splash-screen {
   height: 100vh;
-  background-color: #1e1e29;
+  background-color: #1a1b26;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+  padding: 2rem;
 }
 
 .splash-screen.fade-out {
@@ -15,43 +15,90 @@
 
 .splash-content {
   text-align: center;
-  color: white;
+  max-width: 800px;
+  width: 100%;
+}
+
+.welcome-avatar {
+  width: 200px;
+  height: auto;
+  margin-bottom: 2rem;
+  animation: float 3s ease-in-out infinite;
 }
 
 .splash-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
   color: var(--primary-pink);
+  margin-bottom: 2rem;
 }
 
-.splash-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.8;
+.search-box {
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.search-box form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border-radius: 25px;
+  border: 2px solid var(--primary-pink);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  background: var(--primary-pink);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.search-box button:hover {
+  transform: scale(1.05);
+}
+
+.trending-keywords {
+  margin: 1rem 0 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.trending-keywords span {
+  margin: 0 0.5rem;
 }
 
 .splash-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .splash-buttons button {
   padding: 0.8rem 2rem;
-  font-size: 1.1rem;
+  border-radius: 25px;
+  font-size: 1rem;
   cursor: pointer;
-  border-radius: 8px;
-  border: none;
   transition: all 0.3s ease;
 }
 
 .splash-buttons button:first-child {
-  background-color: var(--primary-pink);
+  background: var(--primary-pink);
   color: white;
+  border: none;
 }
 
 .splash-buttons .login-btn {
-  background-color: transparent;
+  background: transparent;
   border: 2px solid var(--primary-pink);
   color: var(--primary-pink);
 }
@@ -59,4 +106,30 @@
 .splash-buttons button:hover {
   transform: translateY(-2px);
   opacity: 0.9;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .splash-content h1 {
+    font-size: 2rem;
+  }
+  
+  .welcome-avatar {
+    width: 150px;
+  }
+  
+  .search-box input {
+    font-size: 0.9rem;
+  }
 }
