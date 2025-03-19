@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { HomeInfoProvider } from "./context/HomeInfoContext";
 import Home from "./pages/Home/Home";
+import SplashScreen from "./components/SplashScreen";
 import AnimeInfo from "./pages/animeInfo/AnimeInfo";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -34,8 +35,8 @@ function App() {
           {/* {!isSplashScreen && <Navbar />} */}
           <Navbar />
           <Routes>
-            {/* <Route path="/" element={<SplashScreen />} /> */}
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<SplashScreen />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/:id" element={<AnimeInfo />} />
             <Route path="/watch/:id" element={<Watch />} />
             <Route path="/random" element={<AnimeInfo random={true} />} />
