@@ -17,6 +17,20 @@ body,
   max-width: 2048px;
   margin-inline: auto;
 }
+
+button {
+  background-color: var(--primary-pink);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
 .content {
   width: 100%;
   flex-grow: 1;
