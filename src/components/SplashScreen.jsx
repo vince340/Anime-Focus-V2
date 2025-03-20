@@ -22,7 +22,7 @@ export default function SplashScreen() {
   return (
     <div className={`splash-screen ${!isVisible ? 'fade-out' : ''}`}>
       <div className="splash-content">
-        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnBuMnF3ZzI1aTRncW1zb2J1NjlvdzRqNng0ZDJzdTJ0ancxN2FieSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10YWqUivkQPeeJWD3u/giphy.gif" alt="Welcome Avatar" className="welcome-avatar" />
+        <img src="https://tenor.com/bm3bW.gif" alt="Welcome Avatar" className="welcome-avatar" />
         <h1>Welcome to AnimeFocus</h1>
         <div className="search-box">
           <form onSubmit={handleSearch}>
