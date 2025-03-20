@@ -22,7 +22,7 @@ export default function SplashScreen() {
   return (
     <div className={`splash-screen ${!isVisible ? 'fade-out' : ''}`}>
       <div className="splash-content">
-        <img src="/welcome-avatar.png" alt="Welcome Avatar" className="welcome-avatar" />
+        <img src="/welcome-avatar.gif" alt="Welcome Avatar" className="welcome-avatar" />
         <h1>Welcome to AnimeFocus</h1>
         <div className="search-box">
           <form onSubmit={handleSearch}>
@@ -42,7 +42,7 @@ export default function SplashScreen() {
           <span>Solo Leveling</span>
         </div>
         <div className="splash-buttons">
-          <button onClick={() => navigate('/watch')}>Watch Anime</button>
+          <button onClick={() => navigate('/home')}>Watch Anime</button>
           <button onClick={handleContinue} className="continue-btn">Continue to Site</button>
           <button className="login-btn" onClick={() => navigate('/login')}>Login</button>
         </div>
