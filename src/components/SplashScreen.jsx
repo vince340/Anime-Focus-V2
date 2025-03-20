@@ -22,7 +22,7 @@ export default function SplashScreen() {
   return (
     <div className={`splash-screen ${!isVisible ? 'fade-out' : ''}`}>
       <div className="splash-content">
-        <img src="https://tenor.com/bm3bW.gif" alt="Welcome Avatar" className="welcome-avatar" />
+        <img src="https://i.imgur.com/GNbVFV9.gif" alt="Welcome Avatar" className="welcome-avatar" />
         <h1>Welcome to AnimeFocus</h1>
         <div className="search-box">
           <form onSubmit={handleSearch}>
