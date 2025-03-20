@@ -113,6 +113,7 @@ const Sidebar = ({ isOpen, onClose }) => {
               { name: "OVAs", path: "/ova" },
               { name: "ONAs", path: "/ona" },
               { name: "Specials", path: "/special" },
+              { name: "Watch Anime", path: "/" }, // Added Watch Anime link
             ].map((item, index) => (
               <li
                 key={index}
