@@ -22,8 +22,10 @@
 .welcome-avatar {
   width: 200px;
   height: auto;
-  margin-bottom: 2rem;
-  animation: float 3s ease-in-out infinite;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--primary-pink);
+  display: block;
 }
 
 .splash-content h1 {
@@ -131,11 +133,11 @@
   .splash-content h1 {
     font-size: 2rem;
   }
-  
+
   .welcome-avatar {
     width: 150px;
   }
-  
+
   .search-box input {
     font-size: 0.9rem;
   }
