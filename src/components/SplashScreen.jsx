@@ -1,16 +1,19 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import '../styles/SplashScreen.css';
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "../styles/SplashScreen.css";
 
 export default function SplashScreen() {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(true);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [currentTrendingIndex, setCurrentTrendingIndex] = useState(0);
 
   const trendingAnime = [
-    'Dandadan', 'One Piece', 'Solo Leveling', 'Jujutsu Kaisen', 'Demon Slayer'
+    "Dandadan",
+    "One Piece",
+    "Solo Leveling",
+    "Jujutsu Kaisen",
+    "Demon Slayer",
   ];
 
   useEffect(() => {
@@ -22,7 +25,7 @@ export default function SplashScreen() {
 
   const handleContinue = () => {
     setIsVisible(false);
-    setTimeout(() => navigate('/home'), 500);
+    setTimeout(() => navigate("/home"), 500);
   };
 
   const handleSearch = (e) => {
@@ -33,36 +36,17 @@ export default function SplashScreen() {
   };
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className={`splash-screen ${!isVisible ? 'fade-out' : ''}`}
-    >
+    <div className={`splash-screen ${!isVisible ? "fade-out" : ""}`}>
       <div className="splash-content">
-        <motion.img 
-          src="https://i.imgur.com/GNbVFV9.gif" 
-          alt="Welcome Avatar" 
+        <img
+          src="https://i.imgur.com/GNbVFV9.gif"
+          alt="Welcome Avatar"
           className="welcome-avatar"
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ type: "spring", stiffness: 260, damping: 20 }}
         />
-        
-        <motion.h1
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        >
-          Welcome to AnimeFocus
-        </motion.h1>
 
-        <motion.div 
-          className="search-box"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
+        <h1>Welcome to AnimeFocus</h1>
+
+        <div className="search-box">
           <form onSubmit={handleSearch}>
             <input
               type="text"
@@ -70,65 +54,27 @@ export default function SplashScreen() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <motion.button 
-              type="submit"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Search
-            </motion.button>
+            <button type="submit">Search</button>
           </form>
-        </motion.div>
+        </div>
 
-        <motion.div 
-          className="trending-keywords"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-        >
+        <div className="trending-keywords">
           <span>Trending:</span>
-          <motion.span
-            key={currentTrendingIndex}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="trending-anime"
-          >
+          <span className="trending-anime fade-in">
             {trendingAnime[currentTrendingIndex]}
-          </motion.span>
-        </motion.div>
+          </span>
+        </div>
 
-        <motion.div 
-          className="splash-buttons"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.8 }}
-        >
-          <motion.button 
-            onClick={() => navigate('/home')}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Watch Anime
-          </motion.button>
-          <motion.button 
-            onClick={handleContinue} 
-            className="continue-btn"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
+        <div className="splash-buttons">
+          <button onClick={() => navigate("/home")}>Watch Anime</button>
+          <button onClick={handleContinue} className="continue-btn">
             Continue to Site
-          </motion.button>
-          <motion.button 
-            className="login-btn"
-            onClick={() => navigate('/login')}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          </button>
+          <button className="login-btn" onClick={() => navigate("/login")}>
             Login
-          </motion.button>
-        </motion.div>
+          </button>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
-}
+            }
