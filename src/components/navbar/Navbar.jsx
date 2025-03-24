@@ -87,7 +87,7 @@ function Navbar() {
             >
               <FontAwesomeIcon
                 icon={item.icon}
-                className="text-[#FFDD95] text-xl font-bold"
+                className="text-[#ff3d7f] text-xl font-bold"
               />
               <p className="text-[15px]">{item.label}</p>
             </Link>
@@ -98,7 +98,7 @@ function Navbar() {
                 <button
                   key={lang}
                   onClick={() => toggleLanguage(lang)}
-                  className={`px-1 py-[1px] text-xs font-bold ${index === 0 ? "rounded-l-[3px]" : "rounded-r-[3px]"} ${language === lang ? "bg-[#FFDD95] text-black" : "bg-gray-600 text-white"}`}
+                  className={`px-1 py-[1px] text-xs font-bold ${index === 0 ? "rounded-l-[3px]" : "rounded-r-[3px]"} ${language === lang ? "bg-[#ff3d7f] text-black" : "bg-gray-600 text-white"}`}
                 >
                   {lang}
                 </button>
