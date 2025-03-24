@@ -38,7 +38,7 @@ function Footer() {
             <Link
               to={`az-list/${item === "All" ? "" : item}`}
               key={index}
-              className="text-lg bg-[#3A393E] px-2 rounded-md font-bold hover:text-black hover:bg-[#FFDD95] hover:cursor-pointer transition-all ease-out"
+              className="text-lg bg-[#3A393E] px-2 rounded-md font-bold hover:text-black hover:bg-[#ff3d7f] hover:cursor-pointer transition-all ease-out"
             >
               {item}
             </Link>
