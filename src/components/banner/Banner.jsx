@@ -109,7 +109,7 @@ function Banner({ item, index }) {
           <button className="flex justify-center items-center bg-[#FFDD95] px-4 py-2 rounded-3xl gap-x-2 max-[320px]:w-fit ">
             <FontAwesomeIcon
               icon={faPlay}
-              className="text-[8px] bg-[#000000] px-[6px] py-[6px] rounded-full text-[#FFDD95] max-[320px]:text-[6px]"
+              className="text-[8px] bg-[#000000] px-[6px] py-[6px] rounded-full text-[#ff3d7f] max-[320px]:text-[6px]"
             />
             <Link
               to={`/watch/${item.id}`}
