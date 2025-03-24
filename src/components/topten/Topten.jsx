@@ -43,14 +43,14 @@ function Topten({ data, className }) {
   return (
     <div className={`flex flex-col space-y-6 ${className}`}>
       <div className="flex justify-between items-center max-[350px]:flex-col max-[350px]:gap-y-2 max-[350px]:items-start">
-        <h1 className="font-bold text-2xl text-[#FFDD95]">Top 10</h1>
+        <h1 className="font-bold text-2xl text-[#ff3d7f]">Top 10</h1>
         <ul className="flex justify-between w-fit bg-[#3A393E] rounded-[4px] text-sm font-bold">
           <li
             className={`cursor-pointer p-2 px-3 ${
               activePeriod === "today"
-                ? "bg-[#FFDD95] text-[#555462] rounded-l-[4px]"
+                ? "bg-[#ff3d7f] text-[#555462] rounded-l-[4px]"
                 : "text-white"
-            } ${activePeriod !== "today" ? "hover:text-[#FFDD95]" : ""}`}
+            } ${activePeriod !== "today" ? "hover:text-[#ff3d7f]" : ""}`}
             onClick={() => handlePeriodChange("today")}
           >
             Today
@@ -58,9 +58,9 @@ function Topten({ data, className }) {
           <li
             className={`cursor-pointer p-2 px-3 ${
               activePeriod === "week"
-                ? "bg-[#FFDD95] text-[#555462]"
+                ? "bg-[#ff3d7f] text-[#555462]"
                 : "text-white"
-            } ${activePeriod !== "week" ? "hover:text-[#FFDD95]" : ""}`}
+            } ${activePeriod !== "week" ? "hover:text-[#ff3d7f]" : ""}`}
             onClick={() => handlePeriodChange("week")}
           >
             Week
@@ -68,9 +68,9 @@ function Topten({ data, className }) {
           <li
             className={`cursor-pointer p-2 px-3 ${
               activePeriod === "month"
-                ? "bg-[#FFDD95] text-[#555462] rounded-r-[4px]"
+                ? "bg-[#ff3d7f] text-[#555462] rounded-r-[4px]"
                 : "text-white"
-            } ${activePeriod !== "month" ? "hover:text-[#FFDD95]" : ""}`}
+            } ${activePeriod !== "month" ? "hover:text-[#ff3d7f]" : ""}`}
             onClick={() => handlePeriodChange("month")}
           >
             Month
@@ -88,7 +88,7 @@ function Topten({ data, className }) {
               <h1
                 className={`font-bold text-2xl  ${
                   index + 1 < 4
-                    ? "pb-1 text-white border-b-[3px] border-[#FFDD95]"
+                    ? "pb-1 text-white border-b-[3px] border-[#ff3d7f]"
                     : "text-[#777682]"
                 } max-[350px]:hidden`}
               >
@@ -130,7 +130,7 @@ function Topten({ data, className }) {
                 <div className="flex flex-col ml-4 space-y-2">
                   <Link
                     to={`/${item.id}`}
-                    className="text-[1em] font-[500] hover:cursor-pointer hover:text-[#FFDD95] transform transition-all ease-out line-clamp-1 max-[478px]:line-clamp-2 max-[478px]:text-[14px]"
+                    className="text-[1em] font-[500] hover:cursor-pointer hover:text-[#ff3d7f] transform transition-all ease-out line-clamp-1 max-[478px]:line-clamp-2 max-[478px]:text-[14px]"
                     onClick={() => handleNavigate(item.id)}
                   >
                     {language === "EN" ? item.title : item.japanese_title}
