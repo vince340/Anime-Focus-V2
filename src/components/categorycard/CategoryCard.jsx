@@ -96,10 +96,10 @@ const CategoryCard = React.memo(
               to={`/${path}`}
               className="flex w-fit items-baseline h-fit rounded-3xl gap-x-1 group"
             >
-              <p className="text-white text-[12px] font-semibold h-fit leading-0 group-hover:text-[#FFDD95] transition-all ease-out">
+              <p className="text-white text-[12px] font-semibold h-fit leading-0 group-hover:text-[#ff3d7f] transition-all ease-out">
                 View more
               </p>
-              <FaChevronRight className="text-white text-[10px] group-hover:text-[#FFDD95] transition-all ease-out" />
+              <FaChevronRight className="text-white text-[10px] group-hover:text-[#ff3d7f] transition-all ease-out" />
             </Link>
           )}
         </div>
