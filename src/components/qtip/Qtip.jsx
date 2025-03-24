@@ -42,7 +42,7 @@ function Qtip({ id }) {
             )}
             <div className="flex ml-4 gap-x-[1px] overflow-hidden rounded-md items-center h-fit">
               {qtip?.quality && (
-                <div className="bg-[#FFDD95] px-[7px] w-fit flex justify-center items-center py-[1px] text-black">
+                <div className="bg-[#ff3d7f] px-[7px] w-fit flex justify-center items-center py-[1px] text-black">
                   <p className="text-[12px] font-semibold">{qtip.quality}</p>
                 </div>
               )}
@@ -66,7 +66,7 @@ function Qtip({ id }) {
                 )}
               </div>
               {qtip?.type && (
-                <div className="absolute right-0 top-0 justify-center items-center rounded-sm bg-[#FFDD95] px-[6px] text-black">
+                <div className="absolute right-0 top-0 justify-center items-center rounded-sm bg-[#ff3d7f] px-[6px] text-black">
                   <p className="font-semibold text-[13px]">{qtip.type}</p>
                 </div>
               )}
@@ -105,7 +105,7 @@ function Qtip({ id }) {
                   <Link
                     to={`/genre/${genre}`}
                     key={index}
-                    className="text-[13px] hover:text-[#FFDD95]"
+                    className="text-[13px] hover:text-[#ff3d7f]"
                   >
                     <span>{genre}{index === qtip.genres.length - 1 ? "" : ","}&nbsp;</span>
                   </Link>
@@ -114,7 +114,7 @@ function Qtip({ id }) {
             )}
 
           </div>
-          <Link to={qtip.watchLink} className='w-[80%] flex mt-4 justify-center items-center gap-x-2 bg-[#FFDD95] py-[9px] rounded-3xl'>
+          <Link to={qtip.watchLink} className='w-[80%] flex mt-4 justify-center items-center gap-x-2 bg-[#ff3d7f] py-[9px] rounded-3xl'>
             <FontAwesomeIcon
               icon={faPlay}
               className="text-[14px] text-black"
