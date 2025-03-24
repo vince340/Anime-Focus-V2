@@ -117,7 +117,7 @@ const Schedule = () => {
     <>
       <div className="w-full mt-[60px] max-[480px]:mt-[40px]">
         <div className="flex items-center justify-between max-[570px]:flex-col max-[570px]:items-start max-[570px]:gap-y-2">
-          <div className="font-bold text-2xl text-[#FFDD95] max-[478px]:text-[18px]">
+          <div className="font-bold text-2xl text-[#ff3d7f] max-[478px]:text-[18px]">
             Estimated Schedule
           </div>
           <p className="leading-[28px] px-[10px] bg-white text-black rounded-full my-[6px] text-[16px] font-bold max-[478px]:text-[12px] max-[275px]:text-[10px]">
@@ -153,7 +153,7 @@ const Schedule = () => {
                     onClick={() => toggleActive(index)}
                     className={`h-[70px] flex flex-col justify-center items-center w-full text-center rounded-xl shadow-lg cursor-pointer ${
                       currentActiveIndex === index
-                        ? "bg-[#FFDD95] text-black"
+                        ? "bg-[#ff3d7f] text-black"
                         : "bg-white bg-opacity-5 text-[#ffffff] hover:bg-[#3A393E] transition-all duration-300 ease-in-out"
                     }`}
                   >
@@ -208,19 +208,19 @@ const Schedule = () => {
               >
                 <div className="flex items-center max-w-[500px] gap-x-7 max-[400px]:gap-x-2">
                   <div
-                    className="text-lg font-semibold text-[#ffffff59] group-hover:text-[#FFDD95] transition-all duration-300 ease-in-out max-[600px]:text-[14px]
+                    className="text-lg font-semibold text-[#ffffff59] group-hover:text-[#ff3d7f] transition-all duration-300 ease-in-out max-[600px]:text-[14px]
           max-[275px]:text-[12px]"
                   >
                     {item.time || "N/A"}
                   </div>
                   <h3
-                    className="text-[17px] font-semibold line-clamp-1 group-hover:text-[#FFDD95] transition-all duration-300 ease-in-out max-[600px]:text-[14px]
+                    className="text-[17px] font-semibold line-clamp-1 group-hover:text-[#ff3d7f] transition-all duration-300 ease-in-out max-[600px]:text-[14px]
           max-[275px]:text-[12px]"
                   >
                     {item.title || "N/A"}
                   </h3>
                 </div>
-                <button className="max-w-[150px] flex items-center py-1 px-4 rounded-lg gap-x-2 group-hover:bg-[#FFDD95] transition-all duration-300 ease-in-out">
+                <button className="max-w-[150px] flex items-center py-1 px-4 rounded-lg gap-x-2 group-hover:bg-[#ff3d7f] transition-all duration-300 ease-in-out">
                   <FontAwesomeIcon
                     icon={faPlay}
                     className="mt-[1px] text-[10px] max-[320px]:text-[8px] group-hover:text-black transition-all duration-300 ease-in-out"
@@ -235,7 +235,7 @@ const Schedule = () => {
           {scheduleData.length > 7 && (
             <button
               onClick={toggleShowAll}
-              className="text-white py-4 hover:text-[#FFDD95] font-semibold transition-all duration-300 ease-in-out max-sm:text-[13px]"
+              className="text-white py-4 hover:text-[#ff3d7f] font-semibold transition-all duration-300 ease-in-out max-sm:text-[13px]"
             >
               {showAll ? "Show Less" : "Show More"}
             </button>
