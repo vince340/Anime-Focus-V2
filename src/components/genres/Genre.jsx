@@ -20,7 +20,7 @@ function Genre({ data }) {
 
   return (
     <div className="flex flex-col w-full">
-      <h1 className="font-bold text-2xl text-[#FFDD95]">Genres</h1>
+      <h1 className="font-bold text-2xl text-[#ff3d7f]">Genres</h1>
       <div className="bg-[#3A393E] py-6 px-4 mt-6 max-[478px]:bg-transparent max-[478px]:px-0">
         <div className="grid grid-cols-3 grid-rows-2 gap-x-4 gap-y-3 w-full max-[478px]:flex max-[478px]:flex-wrap max-[478px]:gap-2">
           {data &&
