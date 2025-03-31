@@ -18,7 +18,7 @@ export default function SplashScreen() {
     <div className="splash-screen">
       <div className="splash-content">
         <img 
-          src="/logo.png" 
+          src="https://i.imgur.com/GNbVFV9.gif" 
           alt="Welcome Avatar" 
           className="welcome-avatar"
         />
