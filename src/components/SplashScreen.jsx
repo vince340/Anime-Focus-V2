@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/SplashScreen.css";
+import "../../styles/SplashScreen.css";
 
 export default function SplashScreen() {
   const navigate = useNavigate();
@@ -77,4 +77,4 @@ export default function SplashScreen() {
       </div>
     </div>
   );
-            }
+}
