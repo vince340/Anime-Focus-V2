@@ -74,7 +74,3 @@ export default function SplashScreen() {
             Login
           </button>
         </div>
-      </div>
-    </div>
-  );
-}
