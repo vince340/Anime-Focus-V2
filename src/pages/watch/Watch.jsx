@@ -471,19 +471,31 @@ export default function Watch() {
               >
                 View detail
               </Link>
+              <div className="mt-8 bg-[#11101A] rounded-lg p-4">
+                <p className="text-center mb-4">Do you think this website is useful?</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <a 
+                    href="https://ko-fi.com/animefocus" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 bg-[#201F23] hover:bg-[#2a292f] rounded-lg p-3 cursor-pointer"
+                  >
+                    <i className="fas fa-donate" style={{color:'#08c'}}></i>
+                    <span>Donate</span>
+                  </a>
+                  <a
+                    href="https://discord.gg/8as5D6CY8V"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 bg-[#201F23] hover:bg-[#2a292f] rounded-lg p-3 cursor-pointer"
+                  >
+                    <i className="fab fa-discord" style={{color:'#6f85d5'}}></i>
+                    <span>Join Discord</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="w-full flex gap-x-4 items-center bg-[#201F23] p-5 max-[575px]:px-3 max-[320px]:hidden">
-        <img
-          src="https://i.postimg.cc/d34WWyNQ/share-icon.gif"
-          alt="Share Anime"
-          className="w-[60px] h-auto rounded-full max-[1024px]:w-[40px] max-[575px]:hidden"
-        />
-        <div className="flex flex-col w-fit">
-          <p className="text-[15px] font-bold text-[#FFDD95]">Share Anime</p>
-          <p className="text-[16px] text-white">to your friends</p>
         </div>
       </div>
       <div className="w-full px-4 grid grid-cols-[minmax(0,75%),minmax(0,25%)] gap-x-6 max-[1200px]:flex flex-col">
@@ -520,6 +532,30 @@ export default function Watch() {
               limit={10}
             />
           )}
+          {/* Added Donation and Discord buttons here */}
+          <div className="mt-6">
+            <div className="block-rating bg-[#201F23] p-4 rounded-lg">
+              <div className="description text-center mb-4">
+                Do you think this website is useful?
+              </div>
+              <div className="button-rate flex gap-2">
+                <button
+                  onClick={() => alert('Donation feature coming soon!')}
+                  className="btn-vote flex-1 bg-[#11101A] hover:bg-[#1a1923] p-3 rounded-md flex items-center justify-center gap-2"
+                >
+                  <i className="fas fa-donate text-[#08c]"></i>
+                  <span>Donate</span>
+                </button>
+                <button
+                  onClick={() => alert('Discord server coming soon!')}
+                  className="btn-vote flex-1 bg-[#11101A] hover:bg-[#1a1923] p-3 rounded-md flex items-center justify-center gap-2"
+                >
+                  <i className="fab fa-discord text-[#6f85d5]"></i>
+                  <span>Join Discord</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
