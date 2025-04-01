@@ -492,27 +492,23 @@ export default function Watch() {
                     <i className="fab fa-discord" style={{color:'#6f85d5'}}></i>
                     <span>Join Discord</span>
                   </a>
+                  <div className="mt-4">
+                    <a 
+                      href="https://www.buymeacoffee.com/animefocus4" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img 
+                        src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=animefocus4&button_colour=40DCA5&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00"
+                        alt="Buy Me A Coffee"
+                        className="w-full"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="w-full px-4 grid grid-cols-[minmax(0,75%),minmax(0,25%)] gap-x-6 max-[1200px]:flex flex-col">
-        <div className="mt-[15px] flex flex-col gap-y-7">
-          {animeInfo?.charactersVoiceActors.length > 0 && (
-            <Voiceactor animeInfo={animeInfo} className="!mt-0" />
-          )}
-          {animeInfo?.recommended_data.length > 0 ? (
-            <CategoryCard
-              label="Recommended for you"
-              data={animeInfo?.recommended_data}
-              limit={animeInfo?.recommended_data.length}
-              showViewMore={false}
-            />
-          ) : (
-            <CategoryCardLoader className={"mt-[15px]"} />
-          )}
         </div>
         <div>
           {animeInfo && animeInfo.related_data ? (
@@ -532,30 +528,6 @@ export default function Watch() {
               limit={10}
             />
           )}
-          {/* Added Donation and Discord buttons here */}
-          <div className="mt-6">
-            <div className="block-rating bg-[#201F23] p-4 rounded-lg">
-              <div className="description text-center mb-4">
-                Do you think this website is useful?
-              </div>
-              <div className="button-rate flex gap-2">
-                <button
-                  onClick={() => alert('Donation feature coming soon!')}
-                  className="btn-vote flex-1 bg-[#11101A] hover:bg-[#1a1923] p-3 rounded-md flex items-center justify-center gap-2"
-                >
-                  <i className="fas fa-donate text-[#08c]"></i>
-                  <span>Donate</span>
-                </button>
-                <button
-                  onClick={() => alert('Discord server coming soon!')}
-                  className="btn-vote flex-1 bg-[#11101A] hover:bg-[#1a1923] p-3 rounded-md flex items-center justify-center gap-2"
-                >
-                  <i className="fab fa-discord text-[#6f85d5]"></i>
-                  <span>Join Discord</span>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
