@@ -10,7 +10,7 @@ export default function SplashScreen() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+      navigate(`/search?keyword=${encodeURIComponent(searchQuery)}`);
     }
   };
 
