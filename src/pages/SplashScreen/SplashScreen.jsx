@@ -21,10 +21,10 @@ export default function SplashScreen() {
           <nav className="container">
             <ul className="nav header_menu-list">
               <li className="nav-item"><a href="/home">Home</a></li>
-              <li className="nav-item"><a href="/movies">Movies</a></li>
-              <li className="nav-item"><a href="/tv-series">TV Series</a></li>
+              <li className="nav-item"><a href="/movie">Movie</a></li>
+              <li className="nav-item"><a href="/random">Random</a></li>
               <li className="nav-item"><a href="/most-popular">Most Popular</a></li>
-              <li className="nav-item"><a href="/new-season">New Season</a></li>
+              <li className="nav-item"><a href="upcoming/">Up Coming</a></li>
             </ul>
           </nav>
         </header>
