@@ -21,7 +21,7 @@ const socialLinks = [
   },
   {
     icon: FaDiscord,
-    href: "https://discord.gg/BesnYbSe", // Replace with your Discord server invite link
+    href: "https://discord.gg/8as5D6CY8V", // Replace with your Discord server invite link
     color: "#7289DA",
     label: "Discord"
   }
