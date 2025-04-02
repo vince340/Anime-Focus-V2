@@ -1,7 +1,7 @@
 <p align="center">
   <div align="center">
     <a href="https://anime-focus-v2.vercel.app/">
-      <img alt="Anime Focus (AF)" src=" https://i.imgur.com/GNbVFV9.gif" width="220"/>
+      <img alt="Anime Focus (AF)" src="logo.png" width="220"/>
     </a>
   </div>
     <h3 align="center">Anime Focus (AF) - Ad free anime streaming platform</h3>
