@@ -4,7 +4,7 @@
       <img alt="Anime Focus (AF)" src="https://i.imgur.com/1NXmLkP.png" width="220"/>
     </a>
   </div>
-    <h3 align="center">Anime Focus (AF) - Ad free anime streaming platform</h3>
+    <h3 align="center">Anime Focus (AF)- Ad free anime streaming platform</h3>
     <p align="center">
   <a href="https://github.com/">
       <img src="https://img.shields.io/github/stars/itzzzme/zenime" alt="Github Stars">
@@ -74,7 +74,7 @@
 
 ```bash
 git clone https://github.com.git
-cd AnimeTrix
+cd Anime Focus (AF)
 npm install # or yarn
 ```
 
@@ -89,13 +89,13 @@ npm start # or npm run dev (to run develepment server)
 
 ### Vercel
 
-Host your own instance of <a href="https://animetrix.fun">Zenime</a>  on vercel
+Host your own instance of <a href="https://anime-focus-v2.vercel.app">Anime Focus (AF)</a>  on vercel
 
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/itzzzme/zenime)
 
 ### Render
 
-Host your own instance of <a href="https://animetrix.fun">AnimeTrix</a> on Render.
+Host your own instance of <a href="https://anime-focus-v2.vercel.app">Anime Focus (AF)</a> on Render.
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/itzzzme/zenime)
 
@@ -115,5 +115,5 @@ If you discover any issues or have suggestions for improvement, please open an i
 
  If you like the project feel free to drop a star ✨. Your appreciation means a lot.
 
-<p align="center" style="text-decoration: none;">Made by <a href="https://github.com/itzzzme" tarGET="_blank">itzzzme 
+<p align="center" style="text-decoration: none;">Made by <a href="https://web.facebook.com/profile.php?id=61554245590654" tarGET="_blank">HK
 </a>🫰</p>
