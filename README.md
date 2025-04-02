@@ -1,10 +1,10 @@
 <p align="center">
   <div align="center">
-    <a href="https://animetrix.fun/">
-      <img alt="AnimeHi" src="https://raw.githubusercontent.com/itzzzme/zenime/refs/heads/main/public/logo.png" width="220"/>
+    <a href="https://anime-focus-v2.vercel.app/">
+      <img alt="Anime Focus (AF)" src=" https://i.imgur.com/GNbVFV9.gif" width="220"/>
     </a>
   </div>
-    <h3 align="center">Zenime - Ad free anime streaming platform</h3>
+    <h3 align="center">Anime Focus (AF) - Ad free anime streaming platform</h3>
     <p align="center">
   <a href="https://github.com/">
       <img src="https://img.shields.io/github/stars/itzzzme/zenime" alt="Github Stars">
@@ -16,7 +16,7 @@
 </p>
 </p>
 <p align="center">
-    <a href="https://animetrix.fun">AnimeTrix</a> is an open-source anime streaming service that uses <a href="https://github.com/itzzzme/anime-api">custom</a> API, built using ReactJS with javascript and Tailwind CSS. It lets you easily find any anime with intuitive search & suggestion feature and stream without any ads.
+    <a href="https://anime-focus-v2.vercel.app/">Anime Focus (AF)</a> is an open-source anime streaming service that uses <a href="https://github.com/itzzzme/anime-api">custom</a> API, built using ReactJS with javascript and Tailwind CSS. It lets you easily find any anime with intuitive search & suggestion feature and stream without any ads.
  </p>
 
 <details>
