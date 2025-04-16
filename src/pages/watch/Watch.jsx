@@ -484,7 +484,7 @@ export default function Watch() {
                     <span>Donate</span>
                   </a>
                   <a
-                    href="https://discord.gg/8as5D6CY8V"
+                    href="https://discord.gg/kKnrGVqkr7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 bg-[#201F23] hover:bg-[#2a292f] rounded-lg p-3 cursor-pointer"
