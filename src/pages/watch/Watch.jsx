@@ -472,7 +472,7 @@ export default function Watch() {
                 View detail
               </Link>
               <div className="mt-8 bg-[#11101A] rounded-lg p-4">
-                <p className="text-center mb-4">Do you think this website is useful?</p>
+                <p className="text-center mb-4">please donate to help the website to grow 🙏🥺?</p>
                 <div className="grid grid-cols-2 gap-2">
                   <a 
                     href="https://ko-fi.com/animefocus" 
