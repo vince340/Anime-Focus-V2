@@ -10,13 +10,13 @@
       <img src="https://img.shields.io/github/stars/itzzzme/zenime" alt="Github Stars">
     </a>
       <img src="https://img.shields.io/github/issues/itzzzme/zenime" alt="Github Issues">
-     <a href="https://github.com/itzzzme/zenime">
+     <a href="">
       <img src="https://img.shields.io/github/forks/itzzzme/zenime" alt="Github Forks" />
     </a>
 </p>
 </p>
 <p align="center">
-    <a href="https://anime-focus-v2.vercel.app/">Anime Focus (AF)</a> is an open-source anime streaming service that uses <a href="https://github.com/itzzzme/anime-api">custom</a> API, built using ReactJS with javascript and Tailwind CSS. It lets you easily find any anime with intuitive search & suggestion feature and stream without any ads.
+    <a href="https://anime-focus-v2.vercel.app/">Anime Focus (AF)</a> is an open-source anime streaming service that uses <a href="">custom</a> API, built using ReactJS with javascript and Tailwind CSS. It lets you easily find any anime with intuitive search & suggestion feature and stream without any ads.
  </p>
 
 <details>
@@ -91,13 +91,13 @@ npm start # or npm run dev (to run develepment server)
 
 Host your own instance of <a href="https://anime-focus-v2.vercel.app">Anime Focus (AF)</a>  on vercel
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/itzzzme/zenime)
+[![Deploy to Vercel](https://vercel.com/button)]()
 
 ### Render
 
 Host your own instance of <a href="https://anime-focus-v2.vercel.app">Anime Focus (AF)</a> on Render.
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/itzzzme/zenime)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)]()
 
 ### Pull Requests
 
