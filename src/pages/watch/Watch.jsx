@@ -475,7 +475,7 @@ export default function Watch() {
                 <p className="text-center mb-4">please donate to help the website to grow 🙏🥺?</p>
                 <div className="grid grid-cols-2 gap-2">
                   <a 
-                    href="https://ko-fi.com/animefocus" 
+                    href="https://ko-fi.com/animefocus51327" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 bg-[#201F23] hover:bg-[#2a292f] rounded-lg p-3 cursor-pointer"
