@@ -494,7 +494,7 @@ export default function Watch() {
                   </a>
                   <div className="mt-4">
                     <a 
-                      href="https://www.buymeacoffee.com/animefocus4" 
+                      href="https://ko-fi.com/animefocus51327" 
                       target="_blank"
                       rel="noopener noreferrer"
                     >
