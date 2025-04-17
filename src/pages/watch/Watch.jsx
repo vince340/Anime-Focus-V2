@@ -499,7 +499,7 @@ export default function Watch() {
                       rel="noopener noreferrer"
                     >
                       <img 
-                        src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=animefocus4&button_colour=40DCA5&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00"
+                        src="https://ko-fi.com/animefocus51327"
                         alt="Buy Me A Coffee"
                         className="w-full"
                       />
