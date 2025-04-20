@@ -106,7 +106,7 @@ function Banner({ item, index }) {
           {item.description}
         </p>
         <div className="flex gap-x-5 mt-10 max-md:mt-6 max-sm:w-full max-[320px]:flex-col max-[320px]:space-y-3">
-          <button className="flex justify-center items-center bg-[#FFDD95] px-4 py-2 rounded-3xl gap-x-2 max-[320px]:w-fit ">
+          <button className="flex justify-center items-center bg-[#ff3d7f] px-4 py-2 rounded-3xl gap-x-2 max-[320px]:w-fit ">
             <FontAwesomeIcon
               icon={faPlay}
               className="text-[8px] bg-[#000000] px-[6px] py-[6px] rounded-full text-[#ff3d7f] max-[320px]:text-[6px]"
