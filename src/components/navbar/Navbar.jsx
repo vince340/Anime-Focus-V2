@@ -6,6 +6,7 @@ import {
   faFilm,
   faRandom,
   faStar,
+  faCalendar
 } from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "@/src/context/LanguageContext";
 import { Link, useLocation } from "react-router-dom";
@@ -13,6 +14,8 @@ import Sidebar from "../sidebar/Sidebar";
 import { SearchProvider } from "@/src/context/SearchContext";
 import WebSearch from "../searchbar/WebSearch";
 import MobileSearch from "../searchbar/MobileSearch";
+import Schedule from "../schedule/Schedule"; // Assuming Schedule component exists
+
 
 function Navbar() {
   const location = useLocation();
@@ -20,6 +23,8 @@ function Navbar() {
   const [isNotHomePage, setIsNotHomePage] = useState(location.pathname !== "/");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [showSearchBar, setShowSearchBar] = useState(false);
+  const [showSchedule, setShowSchedule] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,12 +64,12 @@ function Navbar() {
               className="text-2xl text-white mt-1 cursor-pointer"
               onClick={handleHamburgerClick}
             />
-              <img
-          src="https://i.postimg.cc/FspVVZn7/logo.png"
-          alt={logoTitle}
-          className="w-[160px] h-[39px]"
-        />
-      </div> 
+            <img
+              src="https://i.postimg.cc/FspVVZn7/logo.png"
+              alt={logoTitle}
+              className="w-[160px] h-[39px]"
+            />
+          </div>
           <WebSearch />
         </div>
         <div className="flex gap-x-7 items-center max-lg:hidden">
@@ -108,10 +113,29 @@ function Navbar() {
               <p className="whitespace-nowrap text-[15px]">Anime name</p>
             </div>
           </div>
+          <button
+            onClick={() => setShowSchedule(!showSchedule)}
+            className="relative p-2 hover:bg-[#ffffff14] rounded-full transition-all duration-300 ease-in-out"
+          >
+            <FontAwesomeIcon icon={faCalendar} className="text-xl" />
+          </button>
         </div>
         <MobileSearch />
       </nav>
       <Sidebar isOpen={isSidebarOpen} onClose={handleCloseSidebar} />
+      {showSchedule && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-start pt-20">
+          <div className="bg-[#1a1a1a] rounded-lg p-6 w-full max-w-4xl mx-4 relative">
+            <button
+              onClick={() => setShowSchedule(false)}
+              className="absolute top-4 right-4 text-2xl text-gray-400 hover:text-white"
+            >
+              ×
+            </button>
+            <Schedule />
+          </div>
+        </div>
+      )}
     </SearchProvider>
   );
 }
