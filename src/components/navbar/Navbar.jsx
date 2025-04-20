@@ -115,9 +115,10 @@ function Navbar() {
           </div>
           <button
             onClick={() => setShowSchedule(!showSchedule)}
-            className="relative p-2 hover:bg-[#ffffff14] rounded-full transition-all duration-300 ease-in-out"
+            className="flex flex-col gap-y-1 items-center cursor-pointer"
           >
-            <FontAwesomeIcon icon={faCalendar} className="text-xl" />
+            <FontAwesomeIcon icon={faCalendar} className="text-[#ff3d7f] text-xl font-bold" />
+            <p className="text-[15px]">Schedule</p>
           </button>
         </div>
         <MobileSearch />
