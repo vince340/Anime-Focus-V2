@@ -14,6 +14,7 @@ import { azRoute, categoryRoutes } from "./utils/category.utils";
 import Search from "./pages/search/Search";
 import Watch from "./pages/watch/Watch";
 import Producer from "./components/producer/Producer";
+import SchedulePage from "./pages/schedule/SchedulePage";
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
             </>
           }
         />
-        <Route path="/:id" element={<AnimeInfo />} />
+        <Route path="/:animeId" element={<AnimeInfo />} />
         <Route path="/watch/:id" element={<Watch />} />
         <Route path="/random" element={<AnimeInfo random={true} />} />
         <Route path="/404-not-found-page" element={<Error error="404" />} />
@@ -63,6 +64,7 @@ function App() {
         ))}
         <Route path="/producer/:id" element={<Producer />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/schedule" element={<SchedulePage />} />
         {/* Catch-all route for 404 */}
         <Route path="*" element={<Error error="404" />} />
       </Routes>
