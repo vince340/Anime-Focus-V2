@@ -38,7 +38,6 @@ const RatingStars = ({ initialRating = 0, onRatingChange }) => {
         {rating ? `${rating}/5` : 'Rate this anime'}
       </span>
     </div>
-  </div>
   );
 };
 
