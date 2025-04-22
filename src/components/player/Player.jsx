@@ -21,6 +21,7 @@ import {
   playIconLg,
   settingsIcon,
   volumeIcon,
+  screenshotIcon, // Added import for screenshot icon
 } from "./PlayerIcons";
 import "./Player.css";
 import website_name from "@/src/config/website";
@@ -355,6 +356,21 @@ export default function Player({
           tooltip: "Forward 10s",
           click: () => {
             art.currentTime = Math.min(art.currentTime + 10, art.duration);
+          },
+        },
+        {
+          html: screenshotIcon, // Added screenshot control
+          position: "right",
+          tooltip: "Take Screenshot",
+          click: () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = art.video.videoWidth;
+            canvas.height = art.video.videoHeight;
+            canvas.getContext('2d').drawImage(art.video, 0, 0, canvas.width, canvas.height);
+            const link = document.createElement('a');
+            link.download = `screenshot-${Date.now()}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
           },
         },
       ],
