@@ -21,6 +21,7 @@ import SidecardLoader from "@/src/components/Loader/Sidecard.loader";
 import Voiceactor from "@/src/components/voiceactor/Voiceactor";
 import Watchcontrols from "@/src/components/watchcontrols/Watchcontrols";
 import useWatchControl from "@/src/hooks/useWatchControl";
+import RatingStars from "@/src/components/ratingstars/RatingStars";
 
 export default function Watch() {
   const location = useLocation();
@@ -465,12 +466,21 @@ export default function Watch() {
                 </span>
                 {` DUB in HD quality.`}
               </p>
-              <Link
-                to={`/${animeId}`}
-                className="w-fit text-[13px] bg-white rounded-[12px] px-[10px] py-1 text-black"
-              >
-                View detail
-              </Link>
+              <div className="flex items-center gap-4">
+                <Link
+                  to={`/${animeId}`}
+                  className="w-fit text-[13px] bg-white rounded-[12px] px-[10px] py-1 text-black"
+                >
+                  View detail
+                </Link>
+                <RatingStars 
+                  initialRating={0}
+                  onRatingChange={(rating) => {
+                    // Here you can implement the logic to save the rating
+                    console.log('Rating changed:', rating);
+                  }}
+                />
+              </div>
               <div className="mt-8 bg-[#11101A] rounded-lg p-4">
                 <p className="text-center mb-4">please donate to help the website to grow 🙏🥺?</p>
                 <div className="grid grid-cols-2 gap-2">
