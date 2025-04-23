@@ -24,19 +24,20 @@ body {
   overflow-y: scroll;
 }
 .scrollbar-visible {
-  scrollbar-width: auto;
+  scrollbar-width: thin;
   scrollbar-color: #888 #333;
 }
 .scrollbar-visible::-webkit-scrollbar {
-  width: 20px;
+  width: 8px;
 }
 
 .scrollbar-visible::-webkit-scrollbar-thumb {
   background-color: #888;
+  border-radius: 4px;
 }
 
 .scrollbar-visible::-webkit-scrollbar-track {
-  background: black;
+  background: #333;
 }
 .scrollbar-hide {
   -ms-overflow-style: none;

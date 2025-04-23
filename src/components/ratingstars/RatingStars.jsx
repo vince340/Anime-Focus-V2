@@ -1,8 +1,7 @@
 
 import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
-import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const RatingStars = ({ initialRating = 0, onRatingChange }) => {
   const [rating, setRating] = useState(initialRating);
@@ -28,9 +27,7 @@ const RatingStars = ({ initialRating = 0, onRatingChange }) => {
             onMouseEnter={() => setHover(star)}
             onMouseLeave={() => setHover(null)}
           >
-            <FontAwesomeIcon 
-              icon={(hover || rating) >= star ? faStarSolid : faStarRegular}
-            />
+            <FontAwesomeIcon icon={faStar} />
           </button>
         ))}
       </div>
