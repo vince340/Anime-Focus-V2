@@ -6,7 +6,8 @@ import {
   faFilm,
   faRandom,
   faStar,
-  faCalendar
+  faCalendar,
+  faClock
 } from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "@/src/context/LanguageContext";
 import { Link, useLocation } from "react-router-dom";
@@ -123,7 +124,14 @@ function Navbar() {
         </div>
         <MobileSearch />
       </nav>
-      <Sidebar isOpen={isSidebarOpen} onClose={handleCloseSidebar} />
+      <Link 
+  to="/schedule" 
+  className="md:hidden flex items-center gap-2 p-2 hover:bg-gray-700 rounded-lg"
+>
+  <FontAwesomeIcon icon={faClock} className="text-lg" />
+  <span>Schedule</span>
+</Link>
+<Sidebar isOpen={isSidebarOpen} onClose={handleCloseSidebar} />
       {showSchedule && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-start pt-20">
           <div className="bg-[#1a1a1a] rounded-lg p-6 w-full max-w-4xl mx-4 relative">
