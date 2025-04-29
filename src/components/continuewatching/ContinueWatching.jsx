@@ -28,6 +28,5 @@ export default function ContinueWatching() {
         ))}
       </div>
     </div>
-  </div>
   );
 }
