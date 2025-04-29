@@ -473,13 +473,6 @@ export default function Watch() {
                 >
                   View detail
                 </Link>
-                <RatingStars 
-                  initialRating={0}
-                  onRatingChange={(rating) => {
-                    // Here you can implement the logic to save the rating
-                    console.log('Rating changed:', rating);
-                  }}
-                />
               </div>
               <div className="mt-8 bg-[#11101A] rounded-lg p-4">
                 <p className="text-center mb-4">please donate to help the website to grow 🙏🥺?</p>
