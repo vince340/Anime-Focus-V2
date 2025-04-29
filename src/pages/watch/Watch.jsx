@@ -81,11 +81,24 @@ export default function Watch() {
   useEffect(() => {
     if (animeInfo) {
       document.title = `Watch ${animeInfo.title} English Sub/Dub online Free on ${website_name}`;
+      
+      // Save to continue watching
+      const watchData = {
+        id: animeId,
+        title: animeInfo.title,
+        japanese_title: animeInfo.japanese_title,
+        poster: animeInfo.poster,
+        episodeId: episodeId,
+        timestamp: new Date().toISOString()
+      };
+      const history = JSON.parse(localStorage.getItem('continueWatching') || '[]');
+      const updatedHistory = [watchData, ...history.filter(item => item.id !== animeId)].slice(0, 12);
+      localStorage.setItem('continueWatching', JSON.stringify(updatedHistory));
     }
     return () => {
       document.title = `${website_name} | Free anime streaming platform`;
     };
-  }, [animeId]);
+  }, [animeId, animeInfo, episodeId]);
 
   useEffect(() => {
     if (totalEpisodes !== null) {
