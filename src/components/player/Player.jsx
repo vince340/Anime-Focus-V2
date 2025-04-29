@@ -359,7 +359,27 @@ export default function Player({
           },
         },
         {
-          html: screenshotIcon, // Added screenshot control
+          html: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>`,
+          position: "right",
+          tooltip: "Upload Subtitle",
+          click: () => {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.srt,.vtt';
+            input.onchange = (e) => {
+              const file = e.target.files[0];
+              if (file) {
+                const url = URL.createObjectURL(file);
+                art.subtitle.switch(url, {
+                  name: file.name,
+                });
+              }
+            };
+            input.click();
+          },
+        },
+        {
+          html: screenshotIcon,
           position: "right",
           tooltip: "Take Screenshot",
           click: () => {
