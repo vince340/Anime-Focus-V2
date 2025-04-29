@@ -16,7 +16,7 @@ export default defineConfig({
       usePolling: true
     },
     allowedHosts: [
-'4ba76690-0695-4570-86c1-69a188319b1b-00-27rm5lrjrgi8b.janeway.replit.dev',
+      '4b8eaa68-1537-4a2f-a80b-96f6048e9e3e-00-aelq87v3ia6v.spock.replit.dev',
     ]
   }
 })
