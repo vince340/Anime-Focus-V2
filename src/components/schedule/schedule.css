@@ -24,3 +24,25 @@
     font-size: 0.9rem;
   }
 }
+
+.schedule-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.schedule-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 640px) {
+  .schedule-page-container {
+    padding: 0.5rem;
+  }
+  
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+}
