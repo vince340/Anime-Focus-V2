@@ -14,7 +14,7 @@ import "./App.css";
 import Search from "./pages/search/Search";
 import Watch from "./pages/watch/Watch";
 import Producer from "./components/producer/Producer";
-import SplashScreen from "./pages/SplashScreen/SplashScreen";
+import SplashScreen from "./components/SplashScreen";
 
 function App() {
   const location = useLocation();
