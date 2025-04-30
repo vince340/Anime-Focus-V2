@@ -487,6 +487,9 @@ export default function Watch() {
                   View detail
                 </Link>
               </div>
+              <div className="mt-4">
+                <RatingStars initialRating={0} onRatingChange={(rating) => console.log('Rating:', rating)} />
+              </div>
               <div className="mt-8 bg-[#11101A] rounded-lg p-4">
                 <p className="text-center mb-4">please donate to help the website to grow 🙏🥺?</p>
                 <div className="grid grid-cols-2 gap-2">
