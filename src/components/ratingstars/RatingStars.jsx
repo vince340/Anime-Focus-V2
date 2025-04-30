@@ -31,7 +31,7 @@ const RatingStars = ({ animeId, initialRating = 0, onRatingChange }) => {
           <button
             key={star}
             className={`text-xl focus:outline-none transition-colors ${
-              (hover || rating) >= star ? 'text-[#FFDD95]' : 'text-gray-400'
+              (hover || rating) >= star ? 'text-[#ff3d7f]' : 'text-gray-400'
             }`}
             onClick={() => handleRatingClick(star)}
             onMouseEnter={() => setHover(star)}
