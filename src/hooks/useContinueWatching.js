@@ -17,5 +17,11 @@ export default function useContinueWatching() {
     localStorage.setItem('continueWatching', JSON.stringify(updatedHistory));
   };
 
-  return { watchHistory, addToWatchHistory };
+  const removeFromWatchHistory = (animeId) => {
+    const updatedHistory = watchHistory.filter(item => item.id !== animeId);
+    setWatchHistory(updatedHistory);
+    localStorage.setItem('continueWatching', JSON.stringify(updatedHistory));
+  };
+
+  return { watchHistory, addToWatchHistory, removeFromWatchHistory };
 }
