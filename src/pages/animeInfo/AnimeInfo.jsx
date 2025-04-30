@@ -15,6 +15,7 @@ import Error from "@/src/components/error/Error";
 import { useLanguage } from "@/src/context/LanguageContext";
 import { useHomeInfo } from "@/src/context/HomeInfoContext";
 import Voiceactor from "@/src/components/voiceactor/Voiceactor";
+import RatingStars from "../../components/ratingstars/RatingStars"; // Import RatingStars component
 
 function InfoItem({ label, value, isProducer = true }) {
   return (
@@ -174,7 +175,10 @@ function AnimeInfo({ random = false }) {
               </div>
             )}
           </div>
-          <div className="flex flex-col ml-4 gap-y-5 max-[575px]:items-center max-[575px]:justify-center max-[575px]:mt-6 max-[1200px]:ml-0">
+          <div className="flex flex-col ml-4 gap-y-5 max-[575px]:items-center max-[575px]:justify-center max-[575px]:mt-6">
+            <div className="flex items-center gap-4 mb-2"> {/* Add rating stars component */}
+              <RatingStars initialRating={0} onRatingChange={(rating) => console.log('Rating:', rating)} />
+            </div>
             <ul className="flex gap-x-2 items-center w-fit max-[1200px]:hidden">
               {[
                 ["Home", ""],
