@@ -1,14 +1,24 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-const RatingStars = ({ initialRating = 0, onRatingChange }) => {
+const RatingStars = ({ animeId, initialRating = 0, onRatingChange }) => {
   const [rating, setRating] = useState(initialRating);
   const [hover, setHover] = useState(null);
 
+  useEffect(() => {
+    // Load saved rating from localStorage
+    const savedRating = localStorage.getItem(`anime-rating-${animeId}`);
+    if (savedRating) {
+      setRating(parseInt(savedRating));
+    }
+  }, [animeId]);
+
   const handleRatingClick = (selectedRating) => {
     setRating(selectedRating);
+    // Save rating to localStorage
+    localStorage.setItem(`anime-rating-${animeId}`, selectedRating.toString());
     if (onRatingChange) {
       onRatingChange(selectedRating);
     }

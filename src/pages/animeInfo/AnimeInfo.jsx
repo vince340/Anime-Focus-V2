@@ -177,7 +177,7 @@ function AnimeInfo({ random = false }) {
           </div>
           <div className="flex flex-col ml-4 gap-y-5 max-[575px]:items-center max-[575px]:justify-center max-[575px]:mt-6">
             <div className="flex items-center gap-4 mb-2"> {/* Add rating stars component */}
-              <RatingStars initialRating={0} onRatingChange={(rating) => console.log('Rating:', rating)} />
+              <RatingStars animeId={animeInfo.id} initialRating={0} onRatingChange={(rating) => console.log('Rating:', rating)} />
             </div>
             <ul className="flex gap-x-2 items-center w-fit max-[1200px]:hidden">
               {[
